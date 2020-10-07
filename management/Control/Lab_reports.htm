@@ -1,0 +1,925 @@
+<?php global $tpl_title; $tpl_title = 'Soil &amp; Water Testing'; ?>
+<?php global $tpl_subheading; $tpl_subheading = ''; ?>
+<?php global $tpl_page; $tpl_page = 'testing'; ?>
+<style type="text/css">
+<!--
+.style1 {font-family: Arial, Helvetica, sans-serif}
+.style4 {font-size: 12px; font-weight: bold; }
+.style5 {font-size: 12px; }
+.style6 {
+	font-size: x-large;
+	font-weight: bold;
+}
+-->
+</style>
+
+
+
+<title>Lab reports</title>
+<div class="style1">
+  <p class="style6">Lab reports - method codes </p>
+  <p><strong>Updated: 15 May 2013 (new reference standards added)</strong>
+</p>
+  <p><span class="style5"><a href="..\index.htm">Return to Management Manual</a></span> </p>
+  <p class="style5"> Lab reports contain space to detail the methodology used to make the determinations. Details of Delta's commonly used test methods and information about speciation of analyses are provided here. </p>
+  <p class="style5">The minimum requirement on lab reports is to report the method used, as detailed in the <strong>Method </strong>column below. Additional details from the <strong>Reference</strong> and <strong>Special notes </strong>columns may be incorporated as necessary. </p>
+  <p class="style5">In some cases several methods are in common use. In such a case, select the mthod used to conduct the specific analysis being reported. </p>
+  <table border=0 cellspacing=0 cellpadding=0 width=1063>
+      <tr bgcolor="#999999" class="style5">
+        <td width=330>          <dl>
+          <dt class="style4">Available chemical tests for waters        </dt>
+        </dl></td>
+        <td width=237><dl>
+          <dt><span class="style4">
+            Method</span></dt>
+        </dl></td>
+        <td width=170 class="style4"><p align="left"><dfn>Reference</dfn></p></td>
+        <td width=326 class="style4"><dl>
+          <dt>Special notes </dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" class="style5">
+        <td width=330>          <dl>
+          <dt>alkalinity of waters          </dt>
+        </dl></td>
+        <td width=237 bgcolor="#FFFFFF"><dl>
+          <dt><span class="style5">
+            Titration, Merck 11109</span></dt>
+        </dl></td>
+        <td width=170 bgcolor="#FFFFFF" class="style5"><div align="left">
+          <dl>
+            <dt><dfn>
+              APHA 2320-Alk-B</dfn></dt>
+          </dl>
+          <p><dfn>AS2093-1977 (P)</dfn></p>
+          <p><dfn>ASLSH Alkalinity </dfn></p>
+        </div></td>
+        <td width=326 bgcolor="#FFFFFF" class="style5"><dl>
+          <dt>See ASLSH for speciation of carbonate, bicarbonate and hydroxide alkalinity </dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" bgcolor="#CCCCCC" class="style5">
+        <td width=330>          <dl>
+          <dt>aluminium (available) in waters (min detection limit 0.02 mg/L)            </dt>
+        </dl></td>
+        <td width=237><dl>
+          <dt><span class="style5">
+            Vis-spectrometry, Merck 100594 </span></dt>
+        </dl></td>
+        <td width=170 class="style5"><p align="left"><dfn>APHA  3500-Al-D </dfn></p></td>
+        <td width=326 class="style5"><dl>
+          <dt>Chromazurol S </dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" class="style5">
+        <td width=330>          <dl>
+          <dt>ammonium test for waters          </dt>
+        </dl></td>
+        <td width=237 bgcolor="#FFFFFF"><dl>
+          <dt><span class="style5">
+            Vis-spectrometry, Merck 14558</span></dt>
+        </dl></td>
+        <td width=170 bgcolor="#FFFFFF" class="style5"><p align="left"><dfn>APHA 4500-NH3-D </dfn></p></td>
+        <td width=326 bgcolor="#FFFFFF" class="style5"><dl>
+          <dt>Blue indophenol deriv. Measures NH4 form of N </dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" bgcolor="#CCCCCC" class="style5">
+        <td width=330 >          <dl>
+          <dt>arsenic in waters (min detection limit 0.1 mg/L)          </dt>
+        </dl></td>
+        <td width=237 ><dl>
+          <dt><span class="style5">
+            Arsine generation, Hach 8013</span></dt>
+        </dl></td>
+        <td width=170 class="style5" ><p align="left"><dfn>US EPA</dfn></p></td>
+        <td width=326 class="style5" ><dl>
+          <dt>Mercuric chloride. Measures inorganic As. Method may be adapted to measure organic forms as well. </dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" class="style5">
+        <td width=330 >          <dl>
+          <dt>barium in waters            </dt>
+        </dl></td>
+        <td width=237 bgcolor="#FFFFFF" ><dl>
+          <dt><span class="style5">
+            Turbidimetry, Hach 8014 </span></dt>
+        </dl></td>
+        <td width=170 bgcolor="#FFFFFF" class="style5" ><p align="left"><dfn>Adapted from Snell and Snell, <em>Colorimetric Methods of Analysis,</em> Vol. II, 769 (1959)</dfn></p></td>
+        <td width=326 bgcolor="#FFFFFF" class="style5" ><dl>
+          <dt>&nbsp;</dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" bgcolor="#CCCCCC" class="style5">
+        <td width=330 >          <dl>
+          <dt>biochemical oxygen demand (BOD
+              <sub>5</sub> ) of waters          </dt>
+        </dl></td>
+        <td width=237 ><dl>
+          <dt><span class="style5">
+            Oxitop (mercury-free manometer) </span></dt>
+        </dl></td>
+        <td width=170 class="style5" ><p align="left"><dfn>APHA 5210-BOD-D </dfn></p></td>
+        <td width=326 class="style5" ><dl>
+          <dt>&nbsp;</dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" class="style5">
+        <td width=330 >          <dl>
+          <dt>cadmium in waters (min detection limit 0.002 mg/L)            </dt>
+        </dl></td>
+        <td width=237 bgcolor="#FFFFFF" ><dl>
+          <dt><span class="style5">
+            Vis-spectrometry, Merck 14834 </span></dt>
+        </dl></td>
+        <td width=170 bgcolor="#FFFFFF" class="style5" ><p align="left"><dfn></dfn></p></td>
+        <td width=326 bgcolor="#FFFFFF" class="style5" ><dl>
+          <dt>Cadion deriv </dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" bgcolor="#CCCCCC" class="style5">
+        <td width=330 >          <dl>
+          <dt>calcium in waters          </dt>
+        </dl></td>
+        <td width=237 ><dl>
+          <dt><span class="style5">
+            Titration, EDTA </span></dt>
+        </dl></td>
+        <td width=170 class="style5" ><p align="left"><dfn>APHA 3500-Ca-D</dfn></p>
+        <p align="left"><dfn>AS2093-1977 (O)</dfn></p></td>
+        <td width=326 class="style5" ><dl>
+          <dt>Glyoxal-bis indicator </dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" class="style5">
+        <td width=330 >          <dl>
+          <dt>chloride in waters          </dt>
+        </dl></td>
+        <td width=237 bgcolor="#FFFFFF" ><dl>
+          <dt><span class="style5">
+            Titration, Mohr's argentometric </span></dt>
+        </dl></td>
+        <td width=170 bgcolor="#FFFFFF" class="style5" ><p align="left"><dfn>AS2093-1977 (G)</dfn></p>
+        <p align="left"><dfn>APHA 4500-Cl-B</dfn></p></td>
+        <td width=326 bgcolor="#FFFFFF" class="style5" ><dl>
+          <dt>Potassium chromate indicator </dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" bgcolor="#CCCCCC" class="style5">
+        <td width=330 >          <dl>
+          <dt>chlorine (total and free) in waters          </dt>
+        </dl></td>
+        <td width=237 ><dl>
+          <dt><span class="style5">
+            Vis-spectrometry, Merck 00599 </span></dt>
+        </dl></td>
+        <td width=170 class="style5" ><p align="left"><dfn>US EPA</dfn></p>
+        <p align="left"><dfn>APHA 4500-Cl-G</dfn></p></td>
+        <td width=326 class="style5" ><dl>
+          <dt>DPD </dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" class="style5">
+        <td width=330 >          <dl>
+          <dt>colour of waters          </dt>
+        </dl></td>
+        <td width=237 bgcolor="#FFFFFF" ><dl>
+          <dt><span class="style5">
+            Vis-spectrometry</span></dt>
+          </dl>
+        <p>Apparent<span class="style5"></span></p></td>
+        <td width=170 bgcolor="#FFFFFF" class="style5" ><p align="left"><dfn>APHA 2120-Color-C</dfn></p>
+        <p align="left"><FONT size=2><FONT face="Arial, Helvetica, sans-serif">Derived from AT Palin (1955) &quot;Photometric determination of the colour and turbidity of water.&quot; <em>Water &amp; Water Engineering,</em> 59:341-345 </FONT></FONT></p></td>
+        <td width=326 bgcolor="#FFFFFF" class="style5" ><dl>
+          <dt>&nbsp;</dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" bgcolor="#CCCCCC" class="style5">
+        <td width=330 >          <dl>
+          <dt>copper (available) in waters (min detection limit 0.05 mg/L)          </dt>
+        </dl></td>
+        <td width=237 ><dl>
+          <dt><span class="style5">
+            Vis-spectrometry, Merck 14767 </span></dt>
+        </dl></td>
+        <td width=170 class="style5" ><p align="left"><dfn></dfn></p></td>
+        <td width=326 class="style5" ><dl>
+          <dt>Cuprizone.Measures ionic Cu(II)</dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" class="style5">
+        <td ><dl>
+            <dt>copper (total) in waters (min detection limit 0.05 mg/L) </dt>
+        </dl></td>
+        <td bgcolor="#FFFFFF" ><dl>
+            <dt><span class="style5"> Vis-spectrometry after acid thermal digestion, Merck 14767 </span></dt>
+        </dl></td>
+        <td bgcolor="#FFFFFF" class="style5" >&nbsp;</td>
+        <td bgcolor="#FFFFFF" class="style5" >Cuprizone. Measures ionic, organically bound and undissolved Cu. </td>
+      </tr>
+      <tr valign="top" bgcolor="#CCCCCC" class="style5">
+        <td width=330 height="34" >          <dl>
+          <dt>electrical conductivity of waters </dt>
+        </dl></td>
+        <td width=237 ><dl>
+          <dt><span class="style5">
+            Meter</span></dt>
+        </dl></td>
+        <td width=170 class="style5" ><p align="left"><dfn>ASLSH B1a </dfn></p></td>
+        <td width=326 class="style5" ><dl>
+          <dt>KCl calibration </dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" class="style5">
+        <td width=330 >          <dl>
+          <dt>hardness (total) test for waters          </dt>
+        </dl></td>
+        <td width=237 bgcolor="#FFFFFF" ><dl>
+          <dt><span class="style5">
+            </span>Titration<span class="style5">, EDTA </span></dt>
+          </dl>
+        <p>&nbsp;</p>
+        <p>Eriochrome EDTA tablet count (Lovibond) </p></td>
+        <td width=170 bgcolor="#FFFFFF" class="style5" ><p align="left"><dfn>APHA 2340-Hardness-C </dfn></p>
+        <p align="left"><dfn>AS2093-1977 (O)</dfn></p>
+        <p align="left">&nbsp;</p></td>
+        <td width=326 bgcolor="#FFFFFF" class="style5" ><dl>
+          <dt>Eriochrome indicator </dt>
+          </dl>
+        <p>&nbsp;</p>
+        <p>Field method only </p></td>
+      </tr>
+      <tr valign="top" bgcolor="#CCCCCC" class="style5">
+        <td ><dl>
+          <dt><span class="style5"> hardness (total and separate Ca &amp; Mg determination) for waters</span></dt>
+        </dl></td>
+        <td ><dl>
+          <dt><span class="style5">
+            Titration (EDTA) and calculation</span></dt>
+        </dl></td>
+        <td class="style5" ><p align="left"><dfn>AS2093-1977 (O)</dfn></p></td>
+        <td class="style5" ><dl>
+          <dt>Eriochrome indicator </dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" class="style5">
+        <td width=330 >          <dl>
+          <dt>iodine in waters (min detection limit 0.05 mg/L)          </dt>
+        </dl></td>
+        <td width=237 bgcolor="#FFFFFF" ><dl>
+          <dt><span class="style5">
+            Vis-spectrometry, Merck 00606 </span></dt>
+        </dl></td>
+        <td width=170 bgcolor="#FFFFFF" class="style5" ><p align="left"><dfn>CCAM</dfn></p></td>
+        <td width=326 bgcolor="#FFFFFF" class="style5" ><dl>
+          <dt>DPD</dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" bgcolor="#CCCCCC" class="style5">
+        <td width=330 >          <dl>
+          <dt>iron (available) in waters (min detection limit 0.03 mg/L)          </dt>
+        </dl></td>
+        <td width=237 ><dl>
+          <dt><span class="style5">
+            Vis-spectrometry, Merck 14761 </span></dt>
+        </dl></td>
+        <td width=170 class="style5" ><p align="left"><dfn></dfn></p></td>
+        <td width=326 class="style5" ><dl>
+          <dt>Triazine deriv. Meaasures bivalent &amp; trivalent forms, and fresh colloidal iron hydroxide </dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" class="style5">
+        <td ><dl>
+            <dt>iron (total) in waters (min detection limit 0.03 mg/L) </dt>
+        </dl></td>
+        <td bgcolor="#FFFFFF" ><dl>
+            <dt><span class="style5"> Vis-spectrometry after acid thermal digestion, Merck 14761 </span></dt>
+        </dl></td>
+        <td bgcolor="#FFFFFF" class="style5" >&nbsp;</td>
+        <td bgcolor="#FFFFFF" class="style5" >Triazine deriv. Measures bivalent &amp; trivalent forms,  fresh colloidal iron hydroxide, aged iron hydrocxides, iron oxides and complex-bound iron. </td>
+      </tr>
+      <tr valign="top" bgcolor="#CCCCCC" class="style5">
+        <td width=330 >          <dl>
+          <dt>lead (available) in waters (min detection limit 0.05 mg/L)</dt>
+        </dl></td>
+        <td width=237 ><dl>
+          <dt><span class="style5">
+            Vis-spectrometry, Merck 09717 </span></dt>
+        </dl></td>
+        <td width=170 class="style5" ><p align="left"><dfn></dfn></p></td>
+        <td width=326 class="style5" ><dl>
+          <dt>PAR deriv. Measures ionic Pb only. </dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" class="style5">
+        <td ><dl>
+            <dt>lead (total) in waters (min detection limit 0.05 mg/L)</dt>
+        </dl></td>
+        <td bgcolor="#FFFFFF" ><dl>
+            <dt><span class="style5"> Vis-spectrometry after acid thermal digestion, Merck 09717 </span></dt>
+        </dl></td>
+        <td bgcolor="#FFFFFF" class="style5" >&nbsp;</td>
+        <td bgcolor="#FFFFFF" class="style5" >PAR deriv. Measures ionic Pb as well as colloidal, undissolved and complex-bound Pb. </td>
+      </tr>
+      <tr valign="top" bgcolor="#CCCCCC" class="style5">
+        <td width=330 >          <dl>
+          <dt>magnesium in waters          </dt>
+        </dl></td>
+        <td width=237 ><dl>
+          <dt><span class="style5">
+            Titration, EDTA </span></dt>
+          </dl>
+        <p><span class="style5"> Vis-spectrometry, Merck 00815</span></p></td>
+        <td width=170 class="style5" ><p align="left"><dfn>AS2093-1977 (O)</dfn></p>
+          <p align="left">&nbsp;</p></td>
+        <td width=326 class="style5" ><dl>
+          <dt>Eriochrome indicator </dt>
+          </dl>
+        <p>Phthaleinkomlexone</p></td>
+      </tr>
+      <tr valign="top" class="style5">
+        <td width=330 >          <dl>
+          <dt>nitrogen - oxidised nitrogen test for waters (nitrate + nitrite)          </dt>
+        </dl></td>
+        <td width=237 bgcolor="#FFFFFF" ><dl>
+          <dt><span class="style5">
+            Vis-spectrometry, Griess-Ilosvay reaction after zinc reduction </span></dt>
+        </dl></td>
+        <td width=170 bgcolor="#FFFFFF" class="style5" ><p align="left"><dfn>ASLSH G2a </dfn></p></td>
+        <td width=326 bgcolor="#FFFFFF" class="style5" ><dl>
+          <dt>Sulfanilamide derived azo dye. Measures NO2 and NO3 </dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" bgcolor="#CCCCCC" class="style5">
+        <td width=330 >          <dl>
+          <dt>nitrogen - separate analysis of nitrite and nitrate in waters          </dt>
+        </dl></td>
+        <td width=237 ><dl>
+          <dt><span class="style5">
+            Vis-spectrometry, Griess-Ilosvay reaction after zinc reduction </span></dt>
+        </dl></td>
+        <td width=170 class="style5" ><p align="left"><dfn>ASLSH G2a </dfn></p></td>
+        <td width=326 class="style5" ><dl>
+          <dt>Sulfanilamide derived azo dye. Measures NO2 and NO3 </dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" bgcolor="#FFFFFF" class="style5">
+        <td width=330 >          <dl>
+          <dt>nitrogen (total) test for waters          </dt>
+        </dl></td>
+        <td width=237 ><dl>
+          <dt><span class="style5">
+            Vis-spectrometry after Koroleff digestion, Merck 00613 </span></dt>
+        </dl></td>
+        <td width=170 class="style5" ><p align="left"><dfn></dfn></p></td>
+        <td width=326 class="style5" ><dl>
+          <dt>2,6-dimethylphenol (DMP) Measures all forms of N (NH4, NO2, NO3 and organically bound N). </dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" bgcolor="#CCCCCC" class="style5">
+        <td width=330 >          <dl>
+          <dt>oxygen (dissolved) in waters (in-situ)          </dt>
+        </dl></td>
+        <td width=237 ><dl>
+          <dt><span class="style5">
+            Meter</span></dt>
+        </dl></td>
+        <td width=170 class="style5" ><p align="left"><dfn>APHA 4500-O-G </dfn></p></td>
+        <td width=326 class="style5" ><dl>
+          <dt>&nbsp;</dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" class="style5">
+        <td width=330 >          <dl>
+          <dt>pH of waters          </dt>
+        </dl></td>
+        <td width=237 bgcolor="#FFFFFF" ><dl>
+          <dt><span class="style5">
+            Meter</span></dt>
+        </dl></td>
+        <td width=170 bgcolor="#FFFFFF" class="style5" ><p align="left"><dfn>APHA 4500-H+-B</dfn></p>
+        <p align="left"><dfn>ASLSH C1a</dfn></p></td>
+        <td width=326 bgcolor="#FFFFFF" class="style5" ><dl>
+          <dt>&nbsp;</dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" bgcolor="#CCCCCC" class="style5">
+        <td width=330 >          <dl>
+          <dt>phosphorus - dissolved orthophosphate test for waters          </dt>
+        </dl></td>
+        <td width=237 ><dl>
+          <dt><span class="style5">
+            Vis-spectrometry after filtration, Merck 14543 </span></dt>
+        </dl></td>
+        <td width=170 class="style5" ><p align="left"><dfn>USEPA</dfn></p>
+        <p align="left"><dfn>APHA 4500-P-E </dfn></p></td>
+        <td width=326 class="style5" ><dl>
+          <dt>Phosphomolybdenum blue (PMB). Measures soluble orthophosphate.</dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" class="style5">
+        <td width=330 >          <dl>
+          <dt>phosphorus - total orthophosphate test for waters          </dt>
+        </dl></td>
+        <td width=237 bgcolor="#FFFFFF" ><dl>
+          <dt><span class="style5">
+            Vis-spectrometry, Merck 14543 </span></dt>
+        </dl></td>
+        <td bgcolor="#FFFFFF" ><p align="left"><dfn>USEPA</dfn></p>
+            <p align="left"><dfn>APHA 4500-P-E </dfn></p></td>
+        <td bgcolor="#FFFFFF" ><dl>
+            <dt>Phosphomolybdenum blue (PMB). Measures all orthophosphate. </dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" bgcolor="#CCCCCC" class="style5">
+        <td width=330 >          <dl>
+          <dt>phosphorus - total phosphorus test for waters          </dt>
+        </dl></td>
+        <td width=237 ><dl>
+          <dt><span class="style5">
+            Vis-spectrometry after acid thermal digestion, Merck 14543 </span></dt>
+        </dl></td>
+        <td ><p align="left"><dfn>USEPA</dfn></p>
+        <p align="left"><dfn>APHA 4500-P-E </dfn></p></td>
+        <td ><dl>
+            <dt>Phosphomolybdenum blue (PMB). Measures orthophosphate, polyphosphate and organically bound phosphate. </dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" class="style5">
+        <td width=330 >          <dl>
+          <dt>silicate in waters (min detection limit 0.005 mg/L)            </dt>
+        </dl></td>
+        <td width=237 bgcolor="#FFFFFF" ><dl>
+          <dt><span class="style5">
+            Vis-spectrometry, Merck 14794 </span></dt>
+        </dl></td>
+        <td width=170 bgcolor="#FFFFFF" class="style5" ><p align="left"><dfn>APHA 4500-Si-D </dfn></p></td>
+        <td width=326 bgcolor="#FFFFFF" class="style5" ><dl>
+          <dt>Silico-molybdenum blue </dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" bgcolor="#CCCCCC" class="style5">
+        <td width=330 >          <dl>
+          <dt>solids (settleable) in waters          </dt>
+        </dl></td>
+        <td width=237 ><dl>
+          <dt><span class="style5">
+            Imhoff cone</span></dt>
+        </dl></td>
+        <td width=170 class="style5" ><p align="left"><dfn>APHA 2540-Solids-F</dfn></p></td>
+        <td width=326 class="style5" ><dl>
+          <dt>&nbsp;</dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" class="style5">
+        <td width=330 >          <dl>
+          <dt>solids (suspended) in waters          </dt>
+        </dl></td>
+        <td width=237 bgcolor="#FFFFFF" ><dl>
+          <dt><span class="style5">
+            Gravimetry</span></dt>
+        </dl></td>
+        <td width=170 bgcolor="#FFFFFF" class="style5" ><p align="left"><dfn>APHA 2540-Solids-D </dfn></p></td>
+        <td width=326 bgcolor="#FFFFFF" class="style5" ><dl>
+          <dt>&nbsp;</dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" bgcolor="#CCCCCC" class="style5">
+        <td width=330 >          <dl>
+          <dt>sulfur - sulfide in waters          </dt>
+        </dl></td>
+        <td width=237 ><dl>
+          <dt><span class="style5">
+            Vis-spectrometry, Merck 14779 </span></dt>
+        </dl></td>
+        <td width=170 class="style5" ><p align="left"><dfn>APHA 4500-S2-D </dfn></p>
+        <p align="left"><dfn>USEPA 376.2 </dfn></p>
+        <p align="left"><em>ISO 10530 </em></p></td>
+        <td width=326 class="style5" ><dl>
+          <dt>Dimethyl-p-phenylenediamine.</dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" class="style5">
+        <td width=330 >          <dl>
+          <dt>sulfur - sulfate in waters</dt>
+        </dl></td>
+        <td width=237 bgcolor="#FFFFFF" ><dl>
+          <dt><span class="style5">
+            Turbidimetry, Merck 14548 &amp; </span><span class="style5"> Merck 14564 </span></dt>
+          </dl>
+        </td>
+        <td width=170 bgcolor="#FFFFFF" class="style5" ><p align="left"><dfn>APHA 4500-SO4-E </dfn></p>
+          <p align="left"><dfn>USEPA</dfn></p></td>
+        <td width=326 bgcolor="#FFFFFF" class="style5" ><dl>
+          <dt>Barium sulfate</dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" bgcolor="#CCCCCC" class="style5">
+        <td width=330 >          <dl>
+          <dt>total organic carbon in waters          </dt>
+        </dl></td>
+        <td width=237 ><dl>
+          <dt><span class="style5">
+            Vis-spectrometry after peroxodisulfate digestion, Merck 14878</span></dt>
+        </dl></td>
+        <td width=170 class="style5" ><p align="left"><dfn></dfn></p></td>
+        <td width=326 class="style5" ><dl>
+          <dt>Measures organically bound carbon in dissolved and undissolved compounds. Inorganic carbon (eg carbonates and CO2) is expelled in gaseous formin an early step. </dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" class="style5">
+        <td width=330 >          <dl>
+          <dt>turbidity of waters          </dt>
+        </dl></td>
+        <td width=237 bgcolor="#FFFFFF" ><dl>
+          <dt><span class="style5">
+            Turbidity meter</span></dt>
+          </dl>
+        <p><span class="style5">Vis-spectrometry</span></p></td>
+        <td width=170 bgcolor="#FFFFFF" class="style5" ><p align="left"><dfn>APHA 2130-Turbidity-B</dfn></p>
+          <p align="left"><FONT size=2><FONT face="Arial, Helvetica, sans-serif">Derived from AT Palin (1955) &quot;Photometric determination of the colour and turbidity of water.&quot; <em>Water &amp; Water Engineering,</em> 59:341-345 </FONT></FONT></p></td>
+        <td width=326 bgcolor="#FFFFFF" class="style5" ><dl>
+          <dt>&nbsp;</dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" bgcolor="#CCCCCC" class="style5">
+        <td >         <dl>
+          <dt><span class="style5"> calculated results (eg TDS by calculation from EC)          </span></dt>
+        </dl></td>
+        <td ><dl>
+          <dt><span class="style5">
+            Calculation</span></dt>
+        </dl></td>
+        <td class="style5" ><p align="left"><dfn>ASLSH B1b</dfn></p>
+          <p>Baseggio G (1974) &ldquo;The Composition of Seawater and Its Concentrates&rdquo; in <em>Fourth Symposium on Salt</em>, Vol 2:351-358 (1974) Northern Ohio Geological Society, Ohio</p>          
+          Williams WD (1986) &ldquo;Conductivity and Salinity of Australian Salt Lakes&rdquo; in <em>Australian Journal of Marine and Freshwater Research </em>37:177-82
+          <p>Williams WD and JE Sherwood (1994) &ldquo;Definition and measurement of salinity in salt lakes&rdquo; in <em>International Journal of Salt Lake Research</em> 3:53-63</p>
+        </td>
+        <td class="style5" ><dl>
+          <dt>&nbsp;</dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" bgcolor="#FFFFFF" class="style5">
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="style5">&nbsp;</td>
+        <td class="style5">&nbsp;</td>
+      </tr>
+      <tr valign="top" bgcolor="#999999" class="style5">
+        <td><dl>
+            <dt><strong> Available chemical tests for soils </strong> </dt>
+        </dl></td>
+        <td><dl>
+            <dt><span class="style5"><strong> Method</strong></span></dt>
+        </dl></td>
+        <td class="style5"><p align="left"><dfn></dfn></p></td>
+        <td class="style5"><dl>
+            <dt>&nbsp;</dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" bgcolor="#FFFFFF" class="style5">
+        <td width=330 >          <dl>
+          <dt>electrical conductivity of soils          </dt>
+        </dl></td>
+        <td width=237 ><dl>
+          <dt><span class="style5">
+            1:5 (soil:water) extraction, then meter</span></dt>
+        </dl></td>
+        <td width=170 class="style5" ><p align="left"><dfn>ASLSH 3A1 </dfn></p></td>
+        <td width=326 class="style5" ><dl>
+          <dt>KCl calibration </dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" bgcolor="#CCCCCC" class="style5">
+        <td width=330 >          <dl>
+          <dt>nitrogen - water soluble oxidised nitrogen in soil (fertility test)          </dt>
+        </dl></td>
+        <td ><dl>
+            <dt><span class="style5"> 1:5 (soil:water) extraction then vis-spectrometry, Griess-Ilosvay reaction after zinc reduction </span></dt>
+        </dl></td>
+        <td ><p align="left"><dfn>ASLSH 7B1 </dfn></p></td>
+        <td ><dl>
+            <dt>Sulfanilamide derived azo dye. Measures NO2 and NO3 </dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" bgcolor="#FFFFFF" class="style5">
+        <td width=330 >          <dl>
+          <dt>oil in soils (TPH) presence          </dt>
+        </dl></td>
+        <td width=237 ><dl>
+          <dt><span class="style5">
+            <FONT face=Arial size=2>Friedel-Crafts reaction</FONT> and portable vis-spectrometry field protocol </span></dt>
+        </dl></td>
+        <td width=170 class="style5" ><p align="left"><dfn>US EPA (EPA/600-R-01/082)</dfn></p></td>
+        <td width=326 class="style5" ><dl>
+          <dt>&nbsp;</dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" bgcolor="#CCCCCC" class="style5">
+        <td width=330 >          <dl>
+          <dt>pH of soils          </dt>
+        </dl></td>
+        <td width=237 ><dl>
+          <dt><span class="style5">
+            1:5 (soil:water) extraction, then meter</span></dt>
+        </dl></td>
+        <td width=170 class="style5" ><p align="left"><dfn>ASLSH 4A1 </dfn></p></td>
+        <td width=326 class="style5" ><dl>
+          <dt>&nbsp;</dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" class="style5">
+        <td width=330 >          <dl>
+          <dt>phosphorus - calcium chloride extractable phosphorus in soil (fertility test)          </dt>
+        </dl></td>
+        <td width=237 ><dl>
+          <dt><span class="style5">
+            Vis-spectrometry after dilute calcium chloride extraction, Merck 14543 </span></dt>
+        </dl></td>
+        <td width=170 class="style5" ><p align="left"><dfn>ASLSH 9F1 </dfn></p>
+        <p align="left"><dfn>APHA 4500-P-E </dfn></p></td>
+        <td width=326 class="style5" ><dl>
+          <dt>Phosphomolybdenum blue (PMB). Measures the labile P. This measure (in ug) is highly correlated with yield response in soybeans and potatoes.</dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" bgcolor="#CCCCCC" class="style5">
+        <td ><dl>
+            <dt>phosphorus in soil - bicarbonate extractable (fertility test) </dt>
+        </dl></td>
+        <td ><dl>
+            <dt><span class="style5"> Vis-spectrometry after bicarbonate (Olsen's) extraction, Merck 14543 </span></dt>
+        </dl></td>
+        <td class="style5" ><p align="left"><dfn>ASLSH 9B1 </dfn></p>
+            <p align="left"><dfn>APHA 4500-P-E </dfn></p></td>
+        <td class="style5" ><dl>
+            <dt>Phosphomolybdenum blue (PMB). Measures orthophosphate. </dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" class="style5">
+        <td width=330 >          <dl>
+          <dt>soil moisture          </dt>
+        </dl></td>
+        <td width=237 ><dl>
+          <dt><span class="style5">
+            Gravimetry, oven-dried at 105oC </span></dt>
+        </dl></td>
+        <td width=170 class="style5" ><p align="left"><dfn>ASLSH 2A1 &amp; 2B1</dfn></p>
+        </td>
+        <td width=326 class="style5" ><dl>
+          <dt>&nbsp;</dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" class="style5">
+        <td width=330 >          <dl>
+          <dt>soil sodicity (indicator, CRC Soil &amp; Land Management) </dt>
+        </dl></td>
+        <td width=237 ><dl>
+          <dt><span class="style5">
+            Visual dispersion, field test </span></dt>
+        </dl></td>
+        <td width=170 class="style5" ><p align="left" class="style1"><dfn>Rengasamy P and J Bourne (1994) Managing Sodic, Acidic and Saline Soils, CRC Soil &amp; Land Management. Adelaide.</dfn><dfn></dfn><dfn><BR>
+        </dfn></p></td>
+        <td width=326 class="style5" ><dl>
+          <dt>&nbsp;</dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" bgcolor="#CCCCCC" class="style5">
+        <td width=330 >          <dl>
+          <dt>acid extractable metals (iron, copper, lead, aluminium, magnesium, calcium and cadmium are available)            </dt>
+        </dl></td>
+        <td width=237 ><dl>
+          <dt><span class="style5">
+            Vis-spectrometry after acid thermal digestion</span></dt>
+        </dl></td>
+        <td width=170 class="style5" ><p align="left"><dfn></dfn></p></td>
+        <td width=326 class="style5" ><dl>
+          <dt>See methods for separate parameters in water testing section of this table </dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" class="style5">
+        <td width=330 ><dl>
+          <dt>&nbsp;</dt>
+        </dl>
+        </td>
+        <td width=237 ><dl>
+          <dt>&nbsp;</dt>
+        </dl>
+        </td>
+        <td width=170 class="style5" ><p align="left"><dfn></dfn></p></td>
+        <td width=326 class="style5" ><dl>
+          <dt>&nbsp;</dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" bgcolor="#999999" class="style5">
+        <td> <dl>
+          <dt><strong>  Available biological tests</strong></dt>
+        </dl></td>
+        <td><dl>
+          <dt><span class="style5"><strong> Method</strong></span></dt>
+        </dl></td>
+        <td class="style5"><p align="left"><dfn></dfn></p></td>
+        <td class="style5"><dl>
+          <dt>&nbsp;</dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" class="style5">
+        <td width=330 >          <dl>
+          <dt>microbiology - plankton counts &amp; ID (waters) </dt>
+        </dl></td>
+        <td width=237 ><dl>
+          <dt><span class="style5">
+            Microscopy after sedimentation </span></dt>
+        </dl></td>
+        <td width=170 class="style5" ><p align="left"><dfn>APHA 10200-Plankton-C to APHA 10200-Plankton-F</dfn></p></td>
+        <td width=326 class="style5" ><dl>
+          <dt>&nbsp;</dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" bgcolor="#CCCCCC" class="style5">
+        <td width=330 >          <dl>
+          <dt>microbiology - presence/absence (waters) of total coliform &amp; E.coli </dt>
+        </dl></td>
+        <td width=237 ><dl>
+          <dt><span class="style5">
+            Chromogenic media - IDEXX Colilert-18</span></dt>
+        </dl></td>
+        <td width=170 class="style5" ><p align="left"><dfn>APHA 9223-Coliforms-B </dfn></p>
+          <p align="left"><dfn>US EPA 40 CFR 136.3 </dfn></p></td>
+        <td width=326 class="style5" ><dl>
+          <dt>For fresh and brackish waters, marine only with dilution. Separately determines total coliforms and<em> Escherichia coli, </em>as an expression of &beta;-galactosidase and &beta;-glucuronidase</dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" class="style5">
+        <td width=330 >          <dl>
+          <dt>microbiology - presence/absence (waters) of enterococci and d-streptococci          </dt>
+        </dl></td>
+        <td width=237 ><dl>
+          <dt><span class="style5">
+            Chromogenic media - IDEXX Enterolert </span></dt>
+        </dl></td>
+        <td width=170 class="style5" ><p align="left"><dfn>APHA 9230- Enterococci-D</dfn></p>
+          <p align="left"><dfn>ASTM #D6503-99 </dfn></p>
+          <p align="left"><dfn>US EPA 40 CFR 136.3</dfn></p></td>
+        <td width=326 class="style5" ><dl>
+          <dt>For fresh, marine, estuarine and groundwater. Detects <FONT size=-1>D-streptococci</FONT> and <em>Enterococci faecalis, E. faecium, E. avium, E. gallinarum, E. casseliflavis,</em> and <EM>E. durans</EM></dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" bgcolor="#CCCCCC" class="style5">
+        <td width=330 >          <dl>
+          <dt>microbiology - COUNT - aerobic plate (Total viable count for waters or surfaces)          </dt>
+        </dl></td>
+        <td width=237 ><dl>
+          <dt><span class="style5">
+            Agar slide with selective media - Merck Envirocheck dip and contact slides </span></dt>
+        </dl></td>
+        <td width=170 class="style5" ><p align="left"><dfn></dfn></p></td>
+        <td width=326 class="style5" ><dl>
+          <dt>&nbsp;</dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" class="style5">
+        <td width=330 >          <dl>
+          <dt>microbiology - COUNT - yeasts &amp; moulds plate (waters or surfaces) </dt>
+        </dl></td>
+        <td width=237 ><dl>
+          <dt><span class="style5">
+            Agar slide with selective media - Merck Envirocheck dip and contact slides </span></dt>
+        </dl></td>
+        <td width=170 class="style5" ><p align="left"><dfn></dfn></p></td>
+        <td width=326 class="style5" ><dl>
+          <dt>&nbsp;</dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" bgcolor="#CCCCCC" class="style5">
+        <td width=330 >          <dl>
+          <dt>microbiology - COUNT - enterococci (waters)          </dt>
+        </dl></td>
+        <td width=237 ><dl>
+          <dt><span class="style5">
+            </span></dt>
+          <dt>Chromogenic media - IDEXX Enterolert with quantitray</dt>
+        </dl>
+        </td>
+        <td width=170 class="style5" ><p align="left"><dfn>APHA 9230- Enterococci-D</dfn></p>
+          <p align="left"><dfn>ASTM #D6503-99</dfn></p>
+          <p align="left"><dfn>US EPA 40 CFR 136.3</dfn></p></td>
+        <td width=326 class="style5" ><dl>
+          <dt>For fresh, marine, estuarine and groundwater. Detects <FONT size=-1>D-streptococci</FONT> and <em>Enterococci faecalis, E. faecium, E. avium, E. gallinarum, E. casseliflavis,</em> and <EM>E. durans</EM></dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" class="style5">
+        <td >microbiology - COUNT - enterococci (surfaces) </td>
+        <td >Agar slide with selective media - Merck Envirocheck contact slides (surfaces)</td>
+        <td >&nbsp;</td>
+        <td >&nbsp;</td>
+      </tr>
+      <tr valign="top" bgcolor="#CCCCCC" class="style5">
+        <td width=330 >          <dl>
+          <dt>microbiology - COUNT - total coliforms &amp; E.coli (waters) </dt>
+        </dl></td>
+        <td ><dl>
+            <dt><span class="style5"> Chromogenic media - IDEXX Colilert-18 and quantitray </span></dt>
+            </dl>
+        </td>
+        <td ><p align="left"><dfn>APHA 9223-Coliforms-B </dfn></p>
+            <p align="left"><dfn>US EPA  40 CFR 136.3</dfn></p>
+            <p align="left"><em>ISO 9308-2:2012 </em></p></td>
+        <td ><dl>
+            <dt> For fresh and brackish waters, marine only with dilution.Separately determines total coliforms and<em> Escherichia coli, </em>as an expression of &beta;-galactosidase and &beta;-glucuronidase. </dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" class="style5">
+        <td >microbiology - COUNT - total coliforms &amp; E.coli (surfaces) </td>
+        <td >Agar slide with selective media - Merck Envirocheck contact slides (surfaces)</td>
+        <td class="style5" >&nbsp;</td>
+        <td class="style5" >&nbsp;</td>
+      </tr>
+      <tr valign="top" class="style5">
+        <td ><dl>
+          <dt>&nbsp;</dt>
+        </dl>
+        </td>
+        <td ><dl>
+          <dt>&nbsp;</dt>
+        </dl>
+        </td>
+        <td class="style5" ><p align="left"><dfn></dfn></p></td>
+        <td class="style5" ><dl>
+          <dt>&nbsp;</dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" bgcolor="#999999" class="style5">
+        <td> <dl>
+          <dt><strong>  Available air quality testing </strong></dt>
+        </dl></td>
+        <td><dl>
+          <dt><span class="style5"><strong> Method</strong></span></dt>
+        </dl></td>
+        <td class="style5"><p align="left"><dfn></dfn></p></td>
+        <td class="style5"><dl>
+          <dt>&nbsp;</dt>
+        </dl></td>
+      </tr>
+      <tr valign="top" class="style5">
+        <td ><dl>
+          <dt><span class="style5"> Microbial counts - total viable, coliforms or yeasts &amp; moulds</span></dt>
+        </dl></td>
+        <td ><dl>
+          <dt><span class="style5">
+            Impactor type microbial air sampler with agar plates and selective media</span></dt>
+        </dl></td>
+        <td class="style5" ><p align="left"><dfn></dfn></p></td>
+        <td class="style5" ><dl>
+          <dt>&nbsp;</dt>
+        </dl></td>
+      </tr>
+  </table>
+    <p class="style5">&nbsp;</p>
+    <table width="100%"  border="0" cellspacing="0" cellpadding="4">
+      <tr bgcolor="#CCCCCC">
+        <th width="10%" scope="col"><div align="left">
+          <p>Code</p>
+          <p>&nbsp;</p>
+        </div></th>
+        <th width="90%" scope="col"><div align="left">
+          <p>Reference</p>
+          <p>&nbsp;</p>
+        </div></th>
+      </tr>
+      <tr align="left" valign="top" class="style5">
+        <th scope="row"><div align="left">APHA</div></th>
+        <td><div align="left">Eaton AD, Clesceri LS &amp; AE Greenberg eds. (1995) <em>Standard Methods for the Examination of Water and Wastewater</em>, APHA, AWWA, WEF, Washington. </div></td>
+      </tr>
+      <tr align="left" valign="top" class="style5">
+        <th scope="row"><div align="left">AS2093-1977</div></th>
+        <td><div align="left"><em>Australian Standard 2093-1977 Salt for Use in the Manufacture of Dairy Products</em>, Standards Association of Australia. Sydney. </div></td>
+      </tr>
+      <tr align="left" valign="top" class="style5">
+        <th scope="row">ASLSH</th>
+        <td>Rayment GE &amp; FR Higginson (1992) <em>Australian Laboratory Handbook of Soil and Water Chemical Methods</em>. Australian Soil and Land Survey Handbook Vol 3, Inkata Press Melbourne.</td>
+      </tr>
+      <tr align="left" valign="top" class="style5">
+        <th scope="row">ASTM</th>
+        <td>American Society for Testing and Materials</td>
+      </tr>
+      <tr align="left" valign="top" class="style5">
+        <th scope="row"><div align="left">CCAM</div></th>
+        <td><div align="left">
+          <p>Thomas LC and GJ Chamberlin (1953) <em>Colorimetric Chemical Analytical Methods (CCAM)</em>. The Tintometer Limited. Salisbury.</p>
+          </div></td>
+      </tr>
+      <tr align="left" valign="top" class="style5">
+        <th scope="row">ISO</th>
+        <td>International Standards Organisation </td>
+      </tr>
+      <tr align="left" valign="top" class="style5">
+        <th scope="row">USEPA</th>
+        <td>Method approved by the US EPA (either an independant method, or one of the US EPA's own methods such as SW-846, NTIS, ECM, 40CFR etc) </td>
+      </tr>
+    </table>
+    <p class="style5"><a href="..\index.htm">Return to Management Manual</a> </p>
+    <p align=center style='text-align:center'><br/>
+      <br/>
+      <br/>
+</p>
+</div>

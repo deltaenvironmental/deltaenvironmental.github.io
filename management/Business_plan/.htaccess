@@ -1,0 +1,9 @@
+
+AuthType Basic
+
+AuthName "DeltaProtected"
+
+AuthUserFile "/home/peride/.htpasswds/management/passwd"
+
+
+require valid-user

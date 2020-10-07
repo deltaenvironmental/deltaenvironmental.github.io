@@ -1,0 +1,641 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>GIS analysis</title>
+<style type="text/css">
+<!--
+.style1 {font-family: Arial, Helvetica, sans-serif}
+.style2 {
+	color: #FF0000;
+	font-weight: bold;
+	margin: 0in;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+}
+.style22 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+}
+.style25 {font-weight: bold; color: #000000;}
+.style26 {color: #000000}
+.style27 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; }
+.style28 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+.style30 {
+	font-weight: bold;
+	color: #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+}
+.style35 {color: #000000; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10pt; }
+-->
+</style>
+<style type="text/css">
+<!--
+.excel1 {
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:black;
+font-size:11.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Calibri, sans-serif;
+text-align:general;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+}
+.excel2 {
+color:#9BBB59;
+border-top:1.0pt solid windowtext;
+border-right:none;
+border-bottom:none;
+border-left:1.0pt solid windowtext;
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+font-size:11.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Calibri, sans-serif;
+text-align:general;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+}
+.excel3 {
+border-top:1.0pt solid windowtext;
+border-right:none;
+border-bottom:none;
+border-left:none;
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:black;
+font-size:11.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Calibri, sans-serif;
+text-align:general;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+}
+.excel12 {
+color:#9BBB59;
+border-top:1.0pt solid windowtext;
+border-right:1.0pt solid windowtext;
+border-bottom:none;
+border-left:none;
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+font-size:11.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Calibri, sans-serif;
+text-align:general;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+}
+.excel4 {
+color:windowtext;
+border-top:none;
+border-right:none;
+border-bottom:none;
+border-left:1.0pt solid windowtext;
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+font-size:11.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Calibri, sans-serif;
+text-align:general;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+}
+.excel5 {
+border-top:none;
+border-right:1.0pt solid windowtext;
+border-bottom:none;
+border-left:none;
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:black;
+font-size:11.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Calibri, sans-serif;
+text-align:general;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+}
+.excel6 {
+border-top:none;
+border-right:none;
+border-bottom:none;
+border-left:1.0pt solid windowtext;
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:black;
+font-size:11.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Calibri, sans-serif;
+text-align:general;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+}
+.excel7 {
+color:#9BBB59;
+border-top:none;
+border-right:none;
+border-bottom:none;
+border-left:1.0pt solid windowtext;
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+font-size:11.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Calibri, sans-serif;
+text-align:general;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+}
+.excel11 {
+color:#9BBB59;
+border-top:none;
+border-right:1.0pt solid windowtext;
+border-bottom:none;
+border-left:none;
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+font-size:11.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Calibri, sans-serif;
+text-align:general;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+}
+.excel8 {
+color:windowtext;
+border-top:none;
+border-right:none;
+border-bottom:1.0pt solid windowtext;
+border-left:1.0pt solid windowtext;
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+font-size:11.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Calibri, sans-serif;
+text-align:general;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+}
+.excel9 {
+border-top:none;
+border-right:none;
+border-bottom:1.0pt solid windowtext;
+border-left:none;
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:black;
+font-size:11.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Calibri, sans-serif;
+text-align:general;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+}
+.excel10 {
+border-top:none;
+border-right:1.0pt solid windowtext;
+border-bottom:1.0pt solid windowtext;
+border-left:none;
+padding-top:1px;
+padding-right:1px;
+padding-left:1px;
+color:black;
+font-size:11.0pt;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+font-family:Calibri, sans-serif;
+text-align:general;
+vertical-align:bottom;
+border:none;
+white-space:nowrap;
+}
+-->
+</style>
+</head>
+
+<body>
+<h1 class="style1">GIS analysis</h1>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana;font-size:10.0pt'>Follow this link to:</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana;font-size:10.0pt'><a href="index.htm">Saltmarsh retreat zone </a>(front page of Mangrove Cove Monitoring web site) </p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana;font-size:10.0pt'><a href="water.htm">Water quality </a></p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana;font-size:10.0pt'><a href="mang.htm">Mangrove expansion photopoints</a></p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana;font-size:10.0pt'><a href="bird.htm">Bird sightings</a></p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana;font-size:10.0pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana;font-size:10.0pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana;font-size:10.0pt'><strong>Time changes everything</strong></p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana;font-size:10.0pt'>Aerials from 1956 show wrecks, filling, the log pool and numberous small moored boats in the area of Mutton Cove, with a handful of mangrove trees in less disturbed areas. The resolution of early black and white aerial photography was not sufficient for thorough ananlysis of the vegetation changes but it the expansion of mangroves could be noted. When the Management Plan for Mangrove Cove was written in 2005,  analysis of the extent of mangroves and samphires on the site was undertaken, using a colour aerial photograph from 2002. This was classified into mangrove, mud flat, and samphire. That imagery has been compared since the writing of the management plan with high resolution imagery obtained in 2011, 2014 and 2017. The high resolution imagery obtained from 2011 onwards was sufficiently resolved that a &quot;transitional&quot; vegetation association was detectable. Therefore the 2002 imagery was reprocessed to allow this transient association to be included in all the following analyses.</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana;font-size:10.0pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'><strong>Definitions</strong></p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'><strong>Mangrove</strong> means a cover of mangrove that no other vegetation or mud can be seen through, from the air - it is a measure of the canopy area.</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'><strong>Samphire </strong>means a mid dense or denser cover of chenopods including <em>Sarcocornia quinqueflora </em>and <em>Tecticornia </em>spp and can include some <em>Suaeda australis </em>(sea-blite) amongst the samphires.</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'><strong>Mudflats </strong>means unvegetated mud.</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'><strong>Supratidal</strong> means the area above normal high water, and this area can include some samphire species. It is located landward of the mangroves, against the embankment. </p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'><strong>Transition</strong> means areas where the habitat is mixed - transition areas could be: </p>
+<ul>
+  <li class="style1">thinning saltmarsh with areas of mud showing through, </li>
+  <li class="style1">very dark or pitted mudflat that could be changing toward or away from saltmarsh habitat, </li>
+  <li class="style1">areas where the short-lived sea-blite <em>Suaeda australis</em> appears intermittently but no other saltmarsh species remain, or </li>
+  <li class="style1">areas of either saltmarsh or mudflat with occasional baby mangroves.</li>
+</ul>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana;font-size:10.0pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana;font-size:10.0pt'><strong>Maps of the vegetation </strong></p>
+<table width="200" border="1">
+  <tr>
+    <td class="style27">2002 habitats </td>
+  </tr>
+  <tr>
+    <td class="style22"><img src="2002%20habitat%20map.jpg" width="1048" height="869"></td>
+  </tr>
+  <tr>
+    <td class="style27">2011 habitats </td>
+  </tr>
+  <tr>
+    <td class="style22"><img src="2011%20habitat%20map.jpg" width="1052" height="873"></td>
+  </tr>
+  <tr>
+    <td class="style27">2014 habitats </td>
+  </tr>
+  <tr>
+    <td class="style22"><img src="Habitat%20areas%202014.jpg" width="1110" height="868"></td>
+  </tr>
+  <tr>
+    <td class="style27">2017 habitats</td>
+  </tr>
+  <tr>
+    <td class="style22"><img src="Habitats%202017.JPG" width="1158" height="913"></td>
+  </tr>
+  <tr>
+    <td class="style22">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="style22">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="style22">&nbsp;</td>
+  </tr>
+</table>
+<p class="style28">Table showing areas of each habitat in 2002,  2011, 2014 &amp; 2017 </p>
+<table border="1" cellpadding="0" cellspacing="0" bordercolor="#000000">
+  <tr bordercolor="#000000">
+    <td width="78" class="style22">&nbsp;</td>
+    <td colspan="2" class="style22"><div align="center" class="style25">2002</div></td>
+    <td colspan="2" class="style22"><div align="center" class="style25">2011</div></td>
+    <td colspan="2" class="style27"><div align="center">2014</div></td>
+    <td colspan="2" class="style27"><div align="center">2017</div></td>
+    <td colspan="2" class="style22"><div align="center" class="style25">
+        <div align="center" class="style27">Habitat comparison, 2002-2017</div>
+    </div></td>
+  </tr>
+  <tr bordercolor="#000000">
+    <td class="style22"><span class="style25">Habitat</span></td>
+    <td width="87" class="style22"><div align="center" class="style25">m 2</div></td>
+    <td width="81" class="style22"><div align="center" class="style25">%</div></td>
+    <td width="87" class="style22"><div align="center" class="style25">m 2</div></td>
+    <td width="81" class="style22"><div align="center" class="style25">%</div></td>
+    <td width="86" class="style22"><div align="center"><span class="style25">m 2</span></div></td>
+    <td width="86" class="style22"><div align="center"><span class="style25">%</span></div></td>
+    <td class="style22"><div align="center"><span class="style25">m 2</span></div></td>
+    <td class="style22"><div align="center"><span class="style25">%</span></div></td>
+    <td width="165" class="style30"><div align="center">Area change </div></td>
+    <td width="165" class="style22"><div align="center" class="style25">Relative % change </div></td>
+  </tr>
+  <tr bordercolor="#000000">
+    <td class="style22"><span class="style26">Mangrove</span></td>
+    <td class="style22"><div align="center" class="style26">2784</div></td>
+    <td class="style22"><div align="center" class="style26">10%</div></td>
+    <td class="style22"><div align="center" class="style26">4726</div></td>
+    <td class="style22"><div align="center" class="style26">17%</div></td>
+    <td class="style22"><div align="center">5027</div></td>
+    <td class="style22"><div align="center">18%</div></td>
+    <td class="style22"><div align="center">5243</div></td>
+    <td class="style22"><div align="center">19%</div></td>
+    <td class="style22"><div align="center">+2459 m2</div></td>
+    <td class="style22"><div align="center">188% increase</div></td>
+  </tr>
+  <tr bordercolor="#000000">
+    <td class="style22"><span class="style26">Mudflats</span></td>
+    <td class="style22"><div align="center" class="style26">19828</div></td>
+    <td class="style22"><div align="center" class="style26">71%</div></td>
+    <td class="style22"><div align="center" class="style26">20849</div></td>
+    <td class="style22"><div align="center" class="style26">74%</div></td>
+    <td class="style22"><div align="center">18288</div></td>
+    <td class="style22"><div align="center">65%</div></td>
+    <td class="style22"><div align="center">18523</div></td>
+    <td class="style22"><div align="center">66%</div></td>
+    <td class="style22"><div align="center">-1305 m2 </div></td>
+    <td class="style22"><div align="center">7% reduction </div></td>
+  </tr>
+  <tr bordercolor="#000000">
+    <td class="style22"><span class="style26">Supratidal</span></td>
+    <td class="style22"><div align="center" class="style26">3255</div></td>
+    <td class="style22"><div align="center" class="style26">12%</div></td>
+    <td class="style22"><div align="center" class="style26">2215</div></td>
+    <td class="style22"><div align="center" class="style26">8%</div></td>
+    <td class="style22"><div align="center">2007</div></td>
+    <td class="style22"><div align="center">7%</div></td>
+    <td class="style22"><div align="center">1479</div></td>
+    <td class="style22"><div align="center">5%</div></td>
+    <td class="style22"><div align="center">-1776 m2 </div></td>
+    <td class="style22"><div align="center">55% reduction </div></td>
+  </tr>
+  <tr bordercolor="#000000">
+    <td class="style22"><span class="style26">Samphire</span></td>
+    <td class="style22"><div align="center" class="style26">1460</div></td>
+    <td class="style22"><div align="center" class="style26">5%</div></td>
+    <td class="style22"><div align="center" class="style26">30</div></td>
+    <td class="style22"><div align="center" class="style26">0%</div></td>
+    <td class="style22"><div align="center">0</div></td>
+    <td class="style22"><div align="center">0%</div></td>
+    <td class="style22"><div align="center">0</div></td>
+    <td class="style22"><div align="center">0%</div></td>
+    <td class="style22"><div align="center">-1460 m2 </div></td>
+    <td class="style22"><div align="center">100% reduction </div></td>
+  </tr>
+  <tr bordercolor="#000000">
+    <td class="style22"><span class="style26">Transition</span></td>
+    <td class="style22"><div align="center" class="style26">753</div></td>
+    <td class="style22"><div align="center" class="style26">3%</div></td>
+    <td class="style22"><div align="center" class="style26">291</div></td>
+    <td class="style22"><div align="center" class="style26">1%</div></td>
+    <td class="style22"><div align="center">2832</div></td>
+    <td class="style22"><div align="center">10%</div></td>
+    <td class="style22"><div align="center">2963</div></td>
+    <td class="style22"><div align="center">11%</div></td>
+    <td class="style22"><div align="center">+2210 m3 </div></td>
+    <td class="style22"><div align="center">394% increase </div></td>
+  </tr>
+  <tr bordercolor="#000000">
+    <td class="style22">&nbsp;</td>
+    <td valign="bottom" class="style26"><div align="center" class="style35">
+      <p>&nbsp;</p>
+      <p>28080</p>
+    </div></td>
+    <td valign="bottom" class="style26"><div align="center" class="style35">
+      <p>&nbsp;</p>
+      <p>100%</p>
+    </div></td>
+    <td valign="bottom" class="style26"><div align="center" class="style35">
+      <p>&nbsp;</p>
+      <p>28111</p>
+    </div></td>
+    <td valign="bottom" class="style26"><div align="center" class="style35">
+      <p>&nbsp;</p>
+      <p>100%</p>
+    </div></td>
+    <td valign="bottom" class="style35"><div align="center" class="style35">
+      <p>28154</p>
+    </div></td>
+    <td valign="bottom" class="style35"><div align="center">100%</div></td>
+    <td valign="bottom" class="style35"><div align="center">28209</div></td>
+    <td valign="bottom" class="style35"><div align="center" class="style22">
+      <p class="style35">100%</p>
+    </div></td>
+    <td valign="bottom" class="style22"><div align="center"></div></td>
+    <td valign="bottom" class="style22"><div align="center" class="style26">
+      <p align="center">&nbsp;</p>
+      <p align="center">&nbsp;</p>
+    </div></td>
+  </tr>
+  <tr>
+    <td class="style22">&nbsp;</td>
+    <td colspan="10" class="style22"><div align="center">0.46% total area change due to georeferencing errors, canopy expansion out of measured area etc. </div></td>
+  </tr>
+</table>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;   </p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'><strong>Discussion</strong></p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>The different habitats and vegetation associations have changed at different rates. </p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>Mangroves have steadily increased their cover. All the  mangrove area that existed in 2002 is  intact. No area that supported mangroves in 2002 has lost any cover. There is a large <strong>new</strong> area of mangroves that has appeared in the intervening 15 years, however. That new area has been sourced variously. About 1107 m2 of what was mudflat in 2002 now supports mangroves, and 432 m2 of samphire has been completely over-run by mangroves. Of the areas that were transitional in 2002, nearly two-thirds have converted to mangrove. A large area that was considered to be supratidal now supports mangroves. Overall, by 2017 mangroves covered an extra 2459 m2 or 188% of the area they covered in 2002.</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>Samphires are the most vulnerable vegetation associationin the site. Samphires have been completely lost in the intertidal area and  samphire species (<em>Sarcocornia </em>and <em>Tecticornia</em>) now only occur in the supratidal habitat. While some of the samphire areas have been over-run by mangroves (432 m2), a much larger area (947 m2) of samphire   is transitioning, and will finally either stabilise as   mudflats or mangroves. </p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>In the 15 year period of observation, parts of this transition area have altered form several times, swapping between transition (covered with a thin cover of sea-blite) or bare mudflat. Some areas that were transitional in 2002 have converted fully to mudflat (92 m2) or to mangrove (488 m2). No transitional area has converted to samphire. New  transitional areas have been sourced mostly from areas that were samphire (947 m2) or mudflat (804 m2), with smaller areas being sourced from supratidal areas that are now being flooded more frequently (as a result of sea level rise and/or embankment erosion). This accounts for 763 m2. A further small source of new transition area is mangrove trees that have suffered disease or misadventures that have left openings in the canopy (152 m2). Transitional habitat is very labile as the changes reflect both the multiple source habitats and also the process of habitat change, which may proceed down several paths. For example, common change paths include: </p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>1) in changing from samphire to mangroves the habitat may pass from samphire through transitional (sick samphires) to mudflat (dead samphires eroded away), back to transitional (when the sea-blite<em> Suaeda</em> colonises and baby mangroves appear), ultimately becoming mangrove, or </p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>2) samphires may move through transitional habitat directly to mudflats in areas that are currently too deep to support mangroves.</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>The transitional area is regularly disturbed by bait diggers (despite the signage prohibiting this activity) who leave a pitted uneven surface. The uneven, changing microtopography only supports the fast growing sea-blite, and the freshly disturbed surface may be more prone to erosion. A relatively small area has transitioned completely to mudflats (93 m2).</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>While a large area of mudflat (1107 m2) has been colonised by mangroves, and a smaller area has become transitional (804 m2) there are no areas of mudflat that have been colonised by samphire or that have accreted sufficient sediment to become supratidal. </p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>Single snapshots in time do not allow any real certainty in estimating the fate of transitional and mudflat areas, however as time passes and the number of analyses increases, a better understanding of the habitat change process is developing. </p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>The overal quantum of transitional cover is now 394% larger than  the area this type of habitat covered in 2002.</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>The area that was classed as supratidal has shrunk, because some of it has converted to mangroves, transitional area or mudflats. Details of the changes within and between each of these habitats are presented in the following table: </p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<table cellspacing="0" cellpadding="0" class="excel1">
+  <tr bordercolor="#000000">
+    <td width="438"><span style="font-family:Calibri, sans-serif;font-size:11.0pt;color:black;"><strong>Change details (2002 - 2017) </strong></span></td>
+    <td width="149"><div align="right"><strong><span style="font-family:Calibri, sans-serif;font-size:11.0pt;color:black;"> m2 </span></strong></div></td>
+  </tr>
+  <tr>
+    <td class="excel2">Mudflat to Mudflat (unchanged)</td>
+    <td class="excel12" align="right">17915.5</td>
+  </tr>
+  <tr>
+    <td class="excel4">Mudflat to Mangrove</td>
+    <td class="excel5" align="right">1107.0</td>
+  </tr>
+  <tr>
+    <td class="excel6">Mudflat to Samphire</td>
+    <td class="excel5" align="right">0.5</td>
+  </tr>
+  <tr>
+    <td class="excel6">Mudflat to Supratidal </td>
+    <td class="excel5" align="right">0.4</td>
+  </tr>
+  <tr>
+    <td class="excel6">Mudflat to Transition </td>
+    <td class="excel5" align="right">804.9</td>
+  </tr>
+  <tr>
+    <td class="excel7">Mangrove to Mangrove (unchanged)</td>
+    <td class="excel11" align="right">2612.6</td>
+  </tr>
+  <tr>
+    <td class="excel6">Mangroves to Transition </td>
+    <td class="excel5" align="right">151.8</td>
+  </tr>
+  <tr>
+    <td class="excel6">Mangroves to Supratidal </td>
+    <td class="excel5" align="right">19.4</td>
+  </tr>
+  <tr>
+    <td class="excel4">Samphire to Mudflat</td>
+    <td class="excel5" align="right">80.2</td>
+  </tr>
+  <tr>
+    <td class="excel4">Samphire to Mangrove</td>
+    <td class="excel5" align="right">432.4</td>
+  </tr>
+  <tr>
+    <td class="excel7">Samphire to Samphire (unchanged)</td>
+    <td class="excel11" align="right">0</td>
+  </tr>
+  <tr>
+    <td class="excel4">Samphire to Transitional</td>
+    <td class="excel5" align="right">947.3</td>
+  </tr>
+  <tr>
+    <td width="438" class="excel7">Transitional to Transitional (unchanged)</td>
+    <td class="excel11" align="right">172.0</td>
+  </tr>
+  <tr>
+    <td class="excel4">Transitional to Mudflat</td>
+    <td class="excel5" align="right">92.5</td>
+  </tr>
+  <tr>
+    <td class="excel4">Transitional to Mangrove</td>
+    <td class="excel5" align="right">488.2</td>
+  </tr>
+  <tr>
+    <td class="excel4">Supratidal to Mangrove</td>
+    <td class="excel5" align="right">377.9</td>
+  </tr>
+  <tr>
+    <td class="excel7">Supratidal to Supratidal (unchanged)</td>
+    <td class="excel11" align="right">1414.7</td>
+  </tr>
+  <tr>
+    <td class="excel4">Supratidal to Mudflat</td>
+    <td class="excel5" align="right">509.6</td>
+  </tr>
+  <tr>
+    <td class="excel4">Supratidal to Samphire</td>
+    <td class="excel5" align="right">0.3</td>
+  </tr>
+  <tr>
+    <td class="excel8">Supratidal to Transitional </td>
+    <td class="excel10" align="right">762.6</td>
+  </tr>
+</table>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>The reasons for habitat change can be quite complex, however the prime reason in this case is likely to be relative sea level change. The <strong>relative sea level</strong> at Port Adelaide has been changing rapidly. Reasons may include being in the graben zone of the horst and graben formation that results from the Para Fault and other local fault lines, oxidation and compresssion of underlying quaternary coastal alluvial deposits, and actual sea level rise due to warming oceans. Actual sea level rise, measured for Gulf St Vincent at Pt Stanvac has been an average of 5.2mm per annum since the mid 1990s (DEWNR, 2013). This translates to an actial sea level rise of more than 10 cm in the last 20 years, or 7.8 cm since 2002 when this monitoring program started. When this is combined with subsidence, the rise may be considerably underestimated. </p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>Subsidiary causes for the observed changes include shadowing and competetion (via alellopathy) once mangroves move into an area, and possibly changes to the supply and texture of silt to the area. </p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p class="style2">&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'><strong>More mangroves in Jervois Basin </strong></p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>Jervois Basin is the old name for the reach of the Port River that lies between the Jervois Bridge and the Railway Bridge. While the entirety of the river would have been lined with mangroves when Europeans settled, they were quickly removed. In the last few years they have begun to establish themselves at several locations in the Port River and the Jervois Basin is no exception. Besides Mangrove Cove itself, other seedling mangroves can be observed growing along the foreshore of NewPort Quays between Mangrove Cove and the new marina, and across the river at &quot;Rotten Row&quot; there is a small patch of mangroves growing in the quiet corner formed on the southern side of the eastern landfall of the Jervois Bridge. Several of these small mangroves have been large enough to detect with aerial photography since about 2011 and so they can be observed as they attempt to reclaim the shores of the river. </p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp; </p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'><strong>Reference</strong></p>
+<p class=style1> <cite>Department of Environment, Water and Natural Resources (DEWNR) (2013) Coastal Planning Information Package: A guide to coastal development assessment and planning policy. Revised 2013. Department of Environment, Water and Natural Resources. Adelaide. </cite></p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>Follow this link to:</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'><a href="index.htm">Saltmarsh retreat zone </a>(front page of Mangrove Cove Monitoring web site) </p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'><a href="water.htm">Water quality </a></p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'><a href="mang.htm">Mangrove expansion photopoints</a></p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'><a href="bird.htm">Bird sightings</a></p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10px'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10px'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10px'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10px'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10px'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10px'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10px'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10px'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10px'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10px'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10px'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10px'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10px'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:10px'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana;font-size:10.0pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana;font-size:10.0pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana;font-size:10.0pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana;font-size:10.0pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana;font-size:10.0pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana;font-size:10.0pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana;font-size:10.0pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana;font-size:10.0pt'>&nbsp;</p>
+<p style='mso-outline-level:1;margin:0in;font-family:Verdana;font-size:10.0pt'>&nbsp;</p>
+</body>
+</html>
